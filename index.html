@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Organic Store</title>
+    <link
+      rel="shortcut icon"
+      href="./images/shopping-card.png"
+      type="image/x-icon"
+    />
+    <!-- font awesome cdn -->
+    <script
+      src="https://kit.fontawesome.com/d376166cbe.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-poppins {
+        font-family: "poppins";
+      }
+    </style>
+
+    <!-- tailwind and daisyUI css cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "rgb(139, 195, 74)",
+              secondary: "rgb(17, 17, 17)",
+              body: "rgb(248, 246, 243)",
+              accent: "rgb(106, 151, 57)",
+              body_neutral: "rgb(51, 51, 51)",
+            },
+            fontFamily: {
+              fontPoppins: "Poppins",
+            },
+            backgroundImage: {
+              leaf: "url('./images/leaf01.png')",
+              call_to_action: "url('./images/call.jpg')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-poppins">
+    <!-- header section start -->
+    <header>
+      <!-- nav section start -->
+      <div class="navbar w-11/12 mx-auto mb-5">
+        <div class="navbar-start">
+          <img src="./images/logo.svg" alt="logo" />
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-lg font-semibold">
+            <li><a>Home</a></li>
+            <li><a>Everything</a></li>
+            <li><a>Groceries</a></li>
+            <li><a>About</a></li>
+            <li><a>Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="flex items-center gap-5 font-semibold text-accent">
+            <span>20.00$</span>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span><i class="fa-solid fa-user"></i></span>
+            <span class="block md:hidden">
+              <a href="#"
+                ><i
+                  class="fa-solid fa-bars bg-green-500 px-2 py-1 text-black"
+                ></i
+              ></a>
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- banner section start -->
+      <section class="h-auto bg-leaf bg-no-repeat bg-right-bottom w-11/12 mx-auto mb-5">
+        <div class="md:flex justify-between items-center w-full h-full bg-body opacity-90">
+          <div><img class="mb-5" src="./images/bannerbg.png" alt="banner" /></div>
+          <div>
+            <h5 class="text-lg font-semibold">Best Quality Products</h5>
+            <h1 class="text-4xl font-extrabold">Join The Organic <br>Movement!</h1>
+            <p class="mt-5 mb-5 text-gray-500">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+              tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+            </p>
+            <a href="#"><button class="btn bg-accent text-white font-semibold text-lg"><i class="fa-solid fa-cart-shopping"></i>Shop Now</button></a>
+          </div>
+        </div>
+      </section>
+    </header>
+  </body>
+</html>
